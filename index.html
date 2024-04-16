@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="" href="/style.css" />
+    <script defer src="/script.js"></script>
+    <title>Text Formatter</title>
+  </head>
+  <body>
+    <div class="main">
+      <div>
+        <!-- Buttons for formatting text -->
+        <button onclick="formatText('bold')">Bold</button>
+        <button onclick="formatText('italic')">Italic</button>
+        <button onclick="formatText('underline')">Underline</button>
+        <div class="flexdiv">
+          <input type="color" id="colorPicker" onchange="formatText('color')" />
+          <select id="caseSelect" onchange="formatText('case')">
+            <option value="none">Normal Case</option>
+            <option value="uppercase">Uppercase</option>
+            <option value="lowercase">Lowercase</option>
+          </select>
+        </div>
+      </div>
+      <div
+        contenteditable="true"
+        id="formattedText"
+        style="border: 1px solid black; padding: 10px"
+      ></div>
+      <!-- Text contenteditable div where formatted text will appear -->
+    </div>
+  </body>
+</html>

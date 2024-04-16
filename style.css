@@ -1,0 +1,30 @@
+.bold { 
+    font-weight: bold; 
+}
+.italic { 
+    font-style: italic; 
+}
+.underline { 
+    text-decoration: underline; 
+}
+.main{
+    border: 2px solid black ;
+    border-radius: 5px;
+    width: 400px;
+    height: 300px;
+}
+
+button{
+    width: 130px;
+    height: 100px;
+}
+input{
+    width: 200px;
+}
+select{
+    width: 200px;
+}
+
+.flexdiv{
+    display: flex;
+}
